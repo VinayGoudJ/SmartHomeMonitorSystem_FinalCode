@@ -190,3 +190,6 @@ const SmartHomeDashboard: React.FC<ISmartHomeDashboardProps> = ({ context }) => 
 };
 
 export default SmartHomeDashboard;
+
+
+
