@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "motion-sensor-web-part-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/motionSensorWebPart/MotionSensorWebPartWebPart.js",
+          "manifest": "./src/webparts/motionSensorWebPart/MotionSensorWebPartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MotionSensorWebPartWebPartStrings": "lib/webparts/motionSensorWebPart/loc/{locale}.js"
+  }
+}

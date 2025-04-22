@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.2",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "smart-home-monitor",
+    "libraryId": "6b8d40b5-0722-448b-be91-27705eb90855",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SmartHomeMonitor",
+    "solutionShortDescription": "SmartHomeMonitor description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

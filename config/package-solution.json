@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "smart-home-monitor-client-side-solution",
+    "id": "6b8d40b5-0722-448b-be91-27705eb90855",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SmartHomeMonitor description"
+      },
+      "longDescription": {
+        "default": "SmartHomeMonitor description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "smart-home-monitor Feature",
+        "description": "The feature that activates elements of the smart-home-monitor solution.",
+        "id": "c23202ad-6b9f-4bf4-aaf6-60f860a253d3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/smart-home-monitor.sppkg"
+  }
+}
