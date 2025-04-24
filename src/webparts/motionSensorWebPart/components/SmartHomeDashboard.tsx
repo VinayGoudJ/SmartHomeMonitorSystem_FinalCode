@@ -35,7 +35,36 @@ const SmartHomeDashboard: React.FC<ISmartHomeDashboardProps> = ({ context }) => 
     return data.value;
   };
 
+  // const addMotionItem = async () => {
+  //   const body = JSON.stringify({
+  //     Title: newMotion.Title,
+  //     Timestamp: newMotion.Timestamp,
+  //     Location: newMotion.Location,
+  //     MotionDetected: true,
+  //     AlertSent: true
+  //   });
+
+  //   await context.spHttpClient.post(
+  //     `${context.pageContext.web.absoluteUrl}/_api/web/lists/getbytitle('MotionSensorData')/items`,
+  //     SPHttpClient.configurations.v1,
+  //     {
+  //       headers: {
+  //         'Accept': 'application/json;odata=nometadata',
+  //         'Content-type': 'application/json;odata=nometadata'
+  //       },
+  //       body
+  //     }
+  //   );
+
+  //   setNewMotion({ Id: 0, Title: '', Timestamp: '', Location: '' });
+  //   setShowForm(false);
+  //   loadAllData();
+  // };
+
   const addMotionItem = async () => {
+    console.warn("🚫 Item creation temporarily disabled for debugging.");
+    return;
+  
     const body = JSON.stringify({
       Title: newMotion.Title,
       Timestamp: newMotion.Timestamp,
@@ -43,7 +72,7 @@ const SmartHomeDashboard: React.FC<ISmartHomeDashboardProps> = ({ context }) => 
       MotionDetected: true,
       AlertSent: true
     });
-
+  
     await context.spHttpClient.post(
       `${context.pageContext.web.absoluteUrl}/_api/web/lists/getbytitle('MotionSensorData')/items`,
       SPHttpClient.configurations.v1,
@@ -55,11 +84,12 @@ const SmartHomeDashboard: React.FC<ISmartHomeDashboardProps> = ({ context }) => 
         body
       }
     );
-
+  
     setNewMotion({ Id: 0, Title: '', Timestamp: '', Location: '' });
     setShowForm(false);
     loadAllData();
   };
+  
 
   const loadAllData = async () => {
     const [motion, temp, logs] = await Promise.all([
