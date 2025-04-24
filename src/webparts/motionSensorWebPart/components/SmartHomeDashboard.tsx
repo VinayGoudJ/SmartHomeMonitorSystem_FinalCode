@@ -108,7 +108,7 @@ const SmartHomeDashboard: React.FC<ISmartHomeDashboardProps> = ({ context }) => 
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>🏡 Smart Home Monitoring Dashboard</h1>
+      <h1>🏡AI Smart Home Monitoring Dashboard</h1>
       <Pivot>
         {/* MOTION SENSOR TAB */}
         <PivotItem headerText="Motion Sensor">

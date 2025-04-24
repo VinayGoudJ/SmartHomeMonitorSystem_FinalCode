@@ -3,7 +3,7 @@
   "solution": {
     "name": "smart-home-monitor-client-side-solution",
     "id": "6b8d40b5-0722-448b-be91-27705eb90855",
-    "version": "1.0.0.1",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -30,7 +30,7 @@
         "title": "smart-home-monitor Feature",
         "description": "The feature that activates elements of the smart-home-monitor solution.",
         "id": "c23202ad-6b9f-4bf4-aaf6-60f860a253d3",
-        "version": "1.0.0.1"
+        "version": "1.0.0.2"
       }
     ]
   },
