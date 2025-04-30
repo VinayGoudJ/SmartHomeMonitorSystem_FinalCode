@@ -93,6 +93,30 @@
       <p><strong>GitHub Repository:</strong> <a href="https://github.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode" target="_blank">SmartHomeMonitorSystem_FinalCode</a></p>
     </section>
     <section>
+      <h2>System Architecture</h2>
+      <p>The system follows a modular architecture with real-time motion detection on the edge and cloud-based alerting and visualization:</p>
+      <ul>
+        <li><strong>Device Layer:</strong> Python + OpenCV motion detector running locally</li>
+        <li><strong>Data Transfer Layer:</strong> HTTP POST to Power Automate</li>
+        <li><strong>Processing Layer:</strong> Power Automate flows parse JSON, trigger conditional alerts, and upload image evidence</li>
+        <li><strong>Storage Layer:</strong> SharePoint Lists and Document Libraries</li>
+        <li><strong>Presentation Layer:</strong> SPFx WebPart on SharePoint with charts, logs, and image viewers</li>
+        <li><strong>Optional Integration:</strong> ThingSpeak IoT simulation for future AI/ML use cases</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Application Development Lifecycle</h2>
+      <p>This project followed an agile sprint-based model using a simplified SDLC approach:</p>
+      <ol>
+        <li><strong>Requirement Gathering:</strong> Identified need for affordable AI home monitoring</li>
+        <li><strong>Design:</strong> Defined SharePoint schema, Power Automate logic, and SPFx UI structure</li>
+        <li><strong>Implementation:</strong> Developed modules independently: detector, flow, UI, and data store</li>
+        <li><strong>Testing:</strong> Motion detection stress-tested with variable lighting; email alerts tested by timestamp triggers</li>
+        <li><strong>Deployment:</strong> Hosted on SharePoint Online; flows published to cloud; GitHub project made public</li>
+        <li><strong>Review & Enhancement:</strong> Integrated feedback, improved UI layout, and planned ML pipeline integration</li>
+      </ol>
+    </section>
+    <section>
       <h2>Key Contributions</h2>
       <ul>
         <li>Implemented Python OpenCV-based motion detection.</li>
@@ -128,7 +152,7 @@
       <h2>Screenshots</h2>
       <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/05.png" alt="Motion Triggered">
       <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/01.png" alt="Dashboard">
-      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/03.png" alt="Dashboard UI">
+      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/03.png" alt="Dashboard UI">    
       <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/04.png" alt="Email Notification">
     </section>
     <section>
