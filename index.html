@@ -58,7 +58,18 @@
     ul, li {
       line-height: 1.8;
     }
-    img {
+    .screenshot-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .screenshot-grid img {
+      width: 45%;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    img.full-width {
       display: block;
       margin: 1rem auto;
       max-width: 90%;
@@ -103,7 +114,7 @@
         <li><strong>Presentation Layer:</strong> SPFx WebPart on SharePoint with charts, logs, and image viewers</li>
         <li><strong>Optional Integration:</strong> ThingSpeak IoT simulation for future AI/ML use cases</li>
       </ul>
-      <img src="cb859e67-caf3-4ddd-8fca-097827e30970.png" alt="System Architecture Diagram">
+      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/02.png" class="full-width" alt="System Architecture Diagram">
     </section>
     <section>
       <h2>Application Development Lifecycle</h2>
@@ -151,9 +162,12 @@
     </section>
     <section>
       <h2>Screenshots</h2>
-      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/01.png" alt="Motion Triggered">
-      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/02.png" alt="Dashboard UI">
-      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/03.png" alt="Email Notification">
+      <div class="screenshot-grid">
+        <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/05.png" alt="Motion Triggered">
+        <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/01.png" alt="Dashboard">
+        <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/03.png" alt="Dashboard UI">
+        <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/04.png" alt="Email Notification">
+      </div>
     </section>
     <section>
       <h2>Code & Repo</h2>
