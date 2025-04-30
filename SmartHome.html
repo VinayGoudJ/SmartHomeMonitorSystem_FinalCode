@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Smart Home Monitoring System | Vinay Kumar Goud Jagiri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    main {
+      padding: 2rem 4rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #1a202c;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.4rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background-color: white;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    table th {
+      background-color: #f1f5f9;
+      font-weight: 600;
+    }
+    ul, li {
+      line-height: 1.8;
+    }
+    img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 90%;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Smart Home Monitoring System</h1>
+    <p>by Vinay Kumar Goud Jagiri</p>
+  </header>
+  <main>
+    <section>
+      <h2>Project Summary</h2>
+      <p>This is a real-time, AI-powered Smart Home Monitoring System using Python, Power Automate, SharePoint, and SPFx. I designed the system from backend detection to frontend visualization and cloud automation.</p>
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode" target="_blank">SmartHomeMonitorSystem_FinalCode</a></p>
+    </section>
+    <section>
+      <h2>System Architecture</h2>
+      <p>The system follows a modular architecture with real-time motion detection on the edge and cloud-based alerting and visualization:</p>
+      <ul>
+        <li><strong>Device Layer:</strong> Python + OpenCV motion detector running locally</li>
+        <li><strong>Data Transfer Layer:</strong> HTTP POST to Power Automate</li>
+        <li><strong>Processing Layer:</strong> Power Automate flows parse JSON, trigger conditional alerts, and upload image evidence</li>
+        <li><strong>Storage Layer:</strong> SharePoint Lists and Document Libraries</li>
+        <li><strong>Presentation Layer:</strong> SPFx WebPart on SharePoint with charts, logs, and image viewers</li>
+        <li><strong>Optional Integration:</strong> ThingSpeak IoT simulation for future AI/ML use cases</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Application Development Lifecycle</h2>
+      <p>This project followed an agile sprint-based model using a simplified SDLC approach:</p>
+      <ol>
+        <li><strong>Requirement Gathering:</strong> Identified need for affordable AI home monitoring</li>
+        <li><strong>Design:</strong> Defined SharePoint schema, Power Automate logic, and SPFx UI structure</li>
+        <li><strong>Implementation:</strong> Developed modules independently: detector, flow, UI, and data store</li>
+        <li><strong>Testing:</strong> Motion detection stress-tested with variable lighting; email alerts tested by timestamp triggers</li>
+        <li><strong>Deployment:</strong> Hosted on SharePoint Online; flows published to cloud; GitHub project made public</li>
+        <li><strong>Review & Enhancement:</strong> Integrated feedback, improved UI layout, and planned ML pipeline integration</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Key Contributions</h2>
+      <ul>
+        <li>Implemented Python OpenCV-based motion detection.</li>
+        <li>Created Power Automate Flows for real-time alerting and SharePoint integration.</li>
+        <li>Built SPFx dashboard UI using Fluent UI, React, and CSS Grid.</li>
+        <li>Uploaded images to SharePoint Document Library via base64 encoding.</li>
+        <li>Simulated IoT inputs using ThingSpeak.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Sprint Timeline</h2>
+      <table>
+        <tr><th>Sprint</th><th>Focus</th><th>Deliverables</th></tr>
+        <tr><td>1</td><td>Setup & MVP</td><td>Python detector, SharePoint Lists</td></tr>
+        <tr><td>2</td><td>Cloud Integration</td><td>Power Automate Flows, HTTP handling</td></tr>
+        <tr><td>3</td><td>UI Development</td><td>SPFx WebPart with charts/logs</td></tr>
+        <tr><td>4</td><td>IoT & JSON Parsing</td><td>ThingSpeak setup, base64 transfer</td></tr>
+        <tr><td>5</td><td>Testing & Final Touch</td><td>Responsive demo, presentation ready</td></tr>
+      </table>
+    </section>
+    <section>
+      <h2>Task Summary</h2>
+      <table>
+        <tr><th>Task</th><th>Details</th><th>Status</th></tr>
+        <tr><td>Motion Detection</td><td>OpenCV & Python script</td><td>✔️ Completed</td></tr>
+        <tr><td>Power Automate</td><td>Flow design, alert logic</td><td>✔️ Completed</td></tr>
+        <tr><td>Image Upload</td><td>Base64 to SharePoint library</td><td>✔️ Completed</td></tr>
+        <tr><td>SPFx UI</td><td>Charts, Logs, Dashboard</td><td>✔️ Completed</td></tr>
+        <tr><td>ThingSpeak</td><td>IoT simulation (optional)</td><td>✔️ Optional</td></tr>
+      </table>
+    </section>
+    <section>
+      <h2>Screenshots</h2>
+      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/05.png" alt="Motion Triggered">
+      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/01.png" alt="Dashboard">
+      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/03.png" alt="Dashboard UI">
+      <img src="https://raw.githubusercontent.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/main/Images/04.png" alt="Email Notification">
+    </section>
+    <section>
+      <h2>Code & Repo</h2>
+      <ul>
+        <li><strong>Source Code:</strong> <a href="https://github.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode" target="_blank">GitHub Repo</a></li>
+        <li><strong>Commits:</strong> <a href="https://github.com/VinayGoudJ/SmartHomeMonitorSystem_FinalCode/commits/main" target="_blank">View All</a></li>
+        <li><strong>Web Part Code:</strong> <code>/src/webparts/SmartHomeDashboard/</code></li>
+        <li><strong>Flows:</strong> <code>/flows/</code></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Future Enhancements</h2>
+      <ul>
+        <li>Integrate anomaly detection via Azure ML</li>
+        <li>Add camera, temperature, and door sensors</li>
+        <li>Push notifications via Microsoft Teams or SMS</li>
+        <li>Auto-schedule maintenance quiet hours</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Vinay Kumar Goud Jagiri. All rights reserved.</p>
+  </footer>
+</body>
+</html>
